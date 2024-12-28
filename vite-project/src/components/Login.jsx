@@ -90,7 +90,7 @@ function Login() {
         </div>
         <div>
           <button type="submit" disabled={!formValid}>
-            Giriş 
+            Giriş Yap
           </button>
         </div>
       </form>
