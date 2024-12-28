@@ -7,18 +7,15 @@ function Login() {
   const [errorMessage, setErrorMessage] = useState('');
   const [formValid, setFormValid] = useState(false);
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  // Email regex
-  const passwordRegex = /^(?!.*[@!])[A-Za-z0-9]{8,}$/;  // Şifre regex
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const passwordRegex = /^(?!.*[@!])[A-Za-z0-9]{8,}$/;
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (emailRegex.test(email) && passwordRegex.test(password) && termsAccepted) {
-      // Başarılı giriş
       setErrorMessage('');
       alert('Başarılı giriş!');
-      // Burada success sayfasına yönlendirme yapılabilir
     } else {
-      // Hata mesajını ayarla
       if (!emailRegex.test(email)) {
         setErrorMessage('Geçerli bir email adresi girin.');
       } else if (!passwordRegex.test(password)) {
@@ -93,7 +90,7 @@ function Login() {
         </div>
         <div>
           <button type="submit" disabled={!formValid}>
-            Giriş Yap
+            Giriş 
           </button>
         </div>
       </form>
