@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./components/Login";
-import Success from "./components/Success";
+import Login from "./components/Login.jsx";
+import Success from "./components/Success.jsx";
 
 function App() {
   return (

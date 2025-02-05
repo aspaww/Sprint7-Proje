@@ -1,6 +1,6 @@
 
 
-const Success = () => {
+export default function Success ()  {
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h2>Başarıyla Giriş Yaptınız!</h2>
@@ -9,4 +9,3 @@ const Success = () => {
   );
 };
 
-export default Success;
